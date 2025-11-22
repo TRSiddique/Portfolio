@@ -5,7 +5,7 @@ import { FcPhone } from 'react-icons/fc';
 import { FaLinkedin, FaGithub, FaTwitter, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 
 function Home() {
-  const whatsappNumber = "01601450821";
+  const whatsappNumber = "+8801601450821";
   const whatsappMessage = "Hello! I'm interested in your services.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
@@ -285,26 +285,26 @@ function Home() {
                 I'm always interested in new opportunities and exciting projects. 
                 Let's talk about how we can work together!
               </p>
-              <div className="space-y-4 text-blue-900 lg:space-y-6">
-                {[
-                  { icon: <MdEmail className="text-xl sm:text-2xl text-blue-600" />, text: 'tasfique@std.cu.ac.bd', href: 'mailto:tasfique@std.cu.ac.bd' },
-                  { icon: <FaWhatsapp  className="text-xl sm:text-2xl" />, text: '+8801601 450821', href: 'tel:+8801601450821' },
-                  { icon: <FaLinkedin className="text-xl sm:text-2xl text-blue-600" />, text: 'LinkedIn', href: 'https://www.linkedin.com/in/tasfiquecsecu/' },
-                  { icon: <FaGithub className="text-xl sm:text-2xl text-gray-800" />, text: 'GitHub', href: 'https://github.com/TRSiddique' },
-                  { icon: <FaFacebook className="text-xl sm:text-2xl text-blue-600" />, text: 'Facebook', href: 'https://www.facebook.com/TasfiqurRahmanSiddiquee/' }
-                ].map((item, index) => (
-                  <a 
-                    key={index}
-                    href={item.href}
-                    className="flex items-center space-x-3 sm:space-x-4 text-black hover:text-blue-600 transition-colors duration-200 text-base sm:text-lg lg:text-xl justify-center lg:justify-start"
-                    target={item.href.startsWith('http') ? '_blank' : '_self'}
-                    rel={item.href.startsWith('http') ? 'noopener noreferrer' : ''}
-                  >
-                    {item.icon}
-                    <span>{item.text}</span>
-                  </a>
-                ))}
-              </div>
+              <div className="space-y-4 text-blue-900 lg:space-y-6 lg:justify-start">
+  {[
+    { icon: <MdEmail className="text-xl sm:text-2xl text-blue-600" />, text: 'tasfique@std.cu.ac.bd', href: 'mailto:tasfique@std.cu.ac.bd' },
+    { icon: <FaWhatsapp className="text-xl sm:text-2xl text-green-600" />, text: '+8801601 450821', href: 'https://wa.me/8801601450821' },
+    { icon: <FaLinkedin className="text-xl sm:text-2xl text-blue-600" />, text: 'LinkedIn', href: 'https://www.linkedin.com/in/tasfiquecsecu/' },
+    { icon: <FaGithub className="text-xl sm:text-2xl text-gray-800" />, text: 'GitHub', href: 'https://github.com/TRSiddique' },
+    { icon: <FaFacebook className="text-xl sm:text-2xl text-blue-600" />, text: 'Facebook', href: 'https://www.facebook.com/TasfiqurRahmanSiddiquee/' }
+  ].map((item, index) => (
+    <a 
+      key={index}
+      href={item.href}
+      className="flex items-center space-x-3 sm:space-x-4 text-black hover:text-blue-600 transition-colors duration-200 text-base sm:text-lg lg:text-xl justify-start"
+      target={item.href.startsWith('http') ? '_blank' : '_self'}
+      rel={item.href.startsWith('http') ? 'noopener noreferrer' : ''}
+    >
+      {item.icon}
+      <span>{item.text}</span>
+    </a>
+  ))}
+</div>
             </div>
             
             {/* Contact Form */}
