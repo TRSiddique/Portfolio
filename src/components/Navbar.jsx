@@ -38,14 +38,16 @@ function Navbar() {
           </div>
 
           {/* Contact Button - Desktop */}
-          <div className="hidden md:block">
-            <a
-              href="#contact"
-              className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium"
-            >
-              Hire Me
-            </a>
-          </div>
+         <div className="hidden md:block">
+  <a
+    href={`https://wa.me/8801601450821?text=${encodeURIComponent("Hello! I'm interested in hiring you for a project.")}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium"
+  >
+    Hire Me
+  </a>
+</div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
